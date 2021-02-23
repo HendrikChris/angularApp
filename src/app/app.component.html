@@ -1,4 +1,19 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Start editing to see some magic happen :)<br/>
+  Halo 10 + 10 = {{10 + 10}}<br/>
+  
+  <input [(ngModel)]="a" type="text"> + <input [(ngModel)]="b" type="text"> =
+  {{(a*1)+(b*1)}} <br/>
 </p>
+
+<div *ngFor="let fruit of item; let i = index">
+  {{i+ 1}}.  {{fruit.nama}}
+</div>
+
+<ng-template *ngIf="tampil then templatetrue">
+</ng-template>
+
+<ng-template #templatetrue>
+  Hai
+</ng-template>
